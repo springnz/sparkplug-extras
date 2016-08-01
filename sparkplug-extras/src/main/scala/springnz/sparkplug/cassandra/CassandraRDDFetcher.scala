@@ -15,12 +15,14 @@ object CassandraRDDFetcher
 
   CustomTypeConverters.registerTimeConverters()
 
+  @deprecated(" (for use in client code). This is intended as an example only.", "1.6.4")
   def selectAll[A: ClassTag: RowReaderFactory: ValidRDDType](keySpace: KeySpace, table: Table): SparkOperation[RDD[A]] =
     SparkOperation { ctx ⇒
       log.info(s"Fetching RDD from keyspace='$keySpace' table='$table' (full table)...")
       ctx.cassandraTable[A](keySpace.name, table.name)
     }
 
+  @deprecated(" (for use in client code). This is intended as an example only.", "1.6.4")
   def selectWhere[A: ClassTag: RowReaderFactory: ValidRDDType](keySpace: KeySpace, table: Table, cql: String, values: Any*): SparkOperation[RDD[A]] =
     SparkOperation { ctx ⇒
       log.info(s"Fetching RDD from keyspace='$keySpace' table='$table' with filter [$cql] [$values] ...")

@@ -8,7 +8,7 @@ object Dependencies {
   val elasticsearchLibVersion = "0.6.0"
   val orientDBMigrationsVersion = "2.10.0"
   val sparkOrientConnectorVersion = "1.7.1"
-  val sparkPlugVersion = "1.6.3"
+  val sparkPlugVersion = "1.6.4"
 
   val sparkPlugCore = "springnz" %% "sparkplug-core" % sparkPlugVersion
   val sparkPlugExecutor = "springnz" %% "sparkplug-executor" % sparkPlugVersion
