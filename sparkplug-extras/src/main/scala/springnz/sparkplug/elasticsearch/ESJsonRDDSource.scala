@@ -5,6 +5,7 @@ import org.elasticsearch.spark._
 import springnz.sparkplug.core._
 import springnz.sparkplug.util.Logging
 
+@deprecated(" (for use in client code). This is intended as an example only.", "1.6.4")
 object ESJsonRDDSource
     extends Logging {
 

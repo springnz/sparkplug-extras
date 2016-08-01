@@ -11,6 +11,7 @@ import scala.reflect.ClassTag
 
 object OrientRDDFetcher extends Logging {
 
+  @deprecated(" (for use in client code). This is intended as an example only.", "1.6.4")
   def select[A: ClassTag](
     className: String,
     whatOption: Option[String],
