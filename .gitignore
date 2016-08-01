@@ -1,17 +1,31 @@
-*.class
-*.log
-
-# sbt specific
+bin
+target
+temp
+classes
+*.bak
+*.orig
 .cache
-.history
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+.project
+.classpath
+.settings
+.lib-src
+.idea_modules
+*.swp
+.tags
+.ensime*
+fileData/
+logs/
+.DS_Store
+*.log
+.DS_Store
 
-# Scala-IDE specific
+# Intellij
+.idea/
+*.iml
+*.iws
 .scala_dependencies
 .worksheet
+
+# SublimeText
+project.sublime-workspace
+project.sublime-project
